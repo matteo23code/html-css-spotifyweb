@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.fl{
+  float:left;
+}
+
+.fr{
+  float:right;
+}
+
+.border{
+  border: 1px solid black;
+}
+
+/* utility class */
+
+.wrapper{
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+} /* container */
+
+
+
+/* start nav */
+.navbar{
+  background: grey;
+  width: 85%;
+  height: 80px;
+}
+
+.sidebar{
+  background: red;
+  width: 200px;
+  height: 550px;
+}
+/* end nav */
+
+/* start main */
+.home{
+  background: blue;
+  width: 85%;
+  height: 470px;
+}
+/* end main */
+
+/* start footer */
+.playbar{
+  background: grey;
+  width: 100%;
+  height: 80px;
+}
+
+/* end footer */
