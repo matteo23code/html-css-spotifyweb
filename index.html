@@ -2,40 +2,76 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spotify</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
 
-    <div class="wrapper ">
-      <header>
-        <div class="fl sidebar ">
+    <div class="wrapper">
+      <main>
+        <nav class=" fl sidebar flex-column">
+          <div class="side-item ">
+            <img class="logo" src="img/logo.svg" alt="">
+            <ul>
+              <li><span><img src="img/home.svg" alt=""></span>Home</li>
+              <li><img src="img/search.svg" alt="">Cerca</li>
+              <li><img src="img/libreria.svg" alt="">La tua libreria</li>
+            </ul>
+          </div>
+          <div class="side-item-scroll">
+            <ul class="playlist">
+              <li><h3>PLAYLIST</h3></li>
+              <li><i class="fa fa-plus-square" aria-hidden="true"></i>Crea Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+            </ul>
+          </div>
+          <div class="side-item">
+            <div class="side-item-content">
+              <p><img class="download" src="img/download.svg" alt="">Installa app</p>
+              <h3><img src="img/profile.svg" alt="">John Doe</h3>
+            </div>
 
-        </div>
-        <!-- start navbar -->
-        <nav>
-          <div class="fl navbar ">
 
           </div>
         </nav>
-        <!-- end navbar -->
 
-      </header>
-
-      <main>
-        <div class=" fl home-contain ">
-          <div class=" home-nav ">
-          </div>
-          <div class="flex-container border">
-            <div class="box-item border">
-
+        <div class="menu-contain">
+          <div class=" fl menu-nav">
+            <div class="fr box-button ">
+              <button class="nav-button" type="button" name="button">
+              EFFETTUA L'UPGRADE
+            </button>
             </div>
           </div>
+            <div class="fl content-nav">
+              <ul>
+                <li>menu</li>
+                <li>menu</li>
+                <li>menu</li>
+                <li>menu</li>
+                <li>menu</li>
+                <li>menu</li>
+              </ul>
+            </div>
+
 
         </div>
-      </main>
+
+
+
+
+
+
+
 
 
 
@@ -49,10 +85,9 @@
 
 
       <footer>
-        <div class=" fl playbar ">
 
-        </div>
       </footer>
+    </main>
     </div>
 
 

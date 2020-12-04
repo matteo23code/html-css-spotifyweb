@@ -5,7 +5,9 @@
 }
 
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: grey;
+  font-size: 12px;
 }
 
 .fl{
@@ -16,10 +18,29 @@ body{
   float:right;
 }
 
-.border{
-  border: 1px solid black;
+h3{
+  color:#fff;
 }
 
+.border{
+  border: 1px solid #fff;;
+}
+
+li:hover, p:hover{
+  color: #fff;
+}
+
+p:after{
+  content: "";
+  display: block;
+  width: 180px;
+  border: 1px solid grey;
+}
+/* .clearfix{
+  content: "";
+  display: table;
+  clear: both;
+} */
 /* utility class */
 
 .wrapper{
@@ -28,52 +49,110 @@ body{
   max-width: 100%;
 } /* container */
 
-
-
-/* start nav */
-.navbar{
-  background: grey;
-  width: 85%;
-  height: 80px;
-}
-
 .sidebar{
-  background: red;
+  background: #000;
   width: 200px;
-  height: 550px;
-}
-/* end nav */
-
-/* start main */
-.home-contain{
-  background: blue;
-  width: 85%;
-  height: 470px;
-}
-
-.home-nav{
-  background: green;
-  width: 100%;
-  height: 50px;
-}
-
-.flex-container{
+  height: 100%;
   display: flex;
+  line-height: 2.5;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.sidebar .logo{
+  width: 135px;
+  height: 55px;
+  margin: 15px 0;
+}
+
+.sidebar img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.playlist{
+  list-style: none;
+}
+
+.side-item{
+  width: 200px;
+  margin-left: 10px;
+}
+
+.side-item-scroll{
+  width: 200px;
+  margin-left: 10px;
+  padding-bottom: 150%;
   overflow-y: auto;
 }
 
-.box-item{
-  background: #ccc;
-  height: 200px;
+.side-item{
   width: 200px;
+  margin-left: 10px;
 }
-/* end main */
 
-/* start footer */
-.playbar{
+.side-item .download{
+  background: none;
+  width: 15px;
+  margin-right: 10px;
+}
+
+.side-item-content img{
   background: grey;
-  width: 100%;
-  height: 80px;
+  border-radius: 10px;
 }
 
-/* end footer */
+
+main{
+  background: #ccc;
+  height: calc(100% - 90px);
+}
+
+.menu-contain{
+  background: #141922;
+  height: 100%;
+  width: 100%;
+  /* overflow-Y: auto; */
+}
+
+.menu-nav{
+  background: rgba(0, 0, 0, 0.5);
+  height: 90px;
+  width: calc(100% - 200px);
+}
+
+.box-button{
+
+}
+
+.nav-button{
+  background: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 25px;
+  border-color: #fff;
+  padding: 10px 40px;
+  margin-top: 20px;
+}
+
+.content-nav{
+  width: calc(100% - 200px);
+  height: 80px;
+  text-align: center;
+}
+
+.content-nav li{
+  display: inline-block;
+}
+
+footer{
+  background: #282828;
+  position: fixed;
+  width: 100%;
+  height: 90px;
+}
