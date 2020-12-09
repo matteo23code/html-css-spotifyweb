@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spotify</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -15,7 +16,7 @@
           <div class="side-item ">
             <img class="logo" src="img/logo.svg" alt="">
             <ul>
-              <li><span><img src="img/home.svg" alt=""></span>Home</li>
+              <li class="little-border-home"><img src="img/home.svg" alt="">Home</li>
               <li><img src="img/search.svg" alt="">Cerca</li>
               <li><img src="img/libreria.svg" alt="">La tua libreria</li>
             </ul>
@@ -36,16 +37,15 @@
           </div>
           <div class="side-item">
             <div class="side-item-content">
-              <p><img class="download" src="img/download.svg" alt="">Installa app</p>
+              <span><img class="download" src="img/download.svg" alt="">Installa app</span>
               <h3><img src="img/profile.svg" alt="">John Doe</h3>
             </div>
-
-
           </div>
         </nav>
 
-        <div class="menu-contain">
-          <div class=" fl menu-nav">
+        <div class=" menu-contain">
+          <div class="fl navigation">
+          <div class=" menu-nav">
             <div class="fr box-button ">
               <button class="nav-button" type="button" name="button">
               EFFETTUA L'UPGRADE
@@ -54,70 +54,131 @@
           </div>
             <div class="fl content-nav">
               <ul>
-                <li>menu</li>
-                <li>menu</li>
-                <li>menu</li>
-                <li>menu</li>
-                <li>menu</li>
-                <li>menu</li>
+                <li class="little-border">IN EVIDENZA</li>
+                <li>PODCAST</li>
+                <li>CLASSIFICHE</li>
+                <li>GENERI E MOOD</li>
+                <li>NUOVE USCITE</li>
+                <li>SCOPRI</li>
               </ul>
             </div>
-
-
+            <div class="title-song">
+              <h2>Recently played</h2>
+            </div>
+            <div class="fl song">
+              <div class="song-item">
+                <img src="img/metal_lifting.jpg" alt="">
+                <h3>Heacy Metal</h3>
+                <p>Subtitle</p>
+              </div>
+              <div class="song-item">
+                <img src="img/stranger.jpeg" alt="">
+                <h3>Stranger Thinghs, Vol. 1(a Netflix Original Series Soundtrack)</h3>
+                <p>Kyle Dixon & Michael Stein</p>
+              </div>
+              <div class="song-item">
+                <img src="img/aquietplace.jpeg" alt="">
+                <h3>A quiet place</h3>
+                <p>Subtitle</p>
+              </div>
+              <div class="song-item">
+                <img src="img/split.jpeg" alt="">
+                <h3>Split</h3>
+                <p>Subtitle</p>
+              </div>
+              <div class="song-item">
+                <img src="img/cure.jpeg" alt="">
+                <h3>A cure for wellness</h3>
+                <p>Subtitle</p>
+              </div>
+              <div class="song-item">
+                <img src="img/sinister.jpeg" alt="">
+                <h3>Sinister</h3>
+                <p>Subtitle</p>
+              </div>
+            </div>
+            <div class="title-song">
+              <h2>Creato per Jonh Doe</h2>
+              <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+            </div>
+            <div class="fl song">
+              <div class="song-item">
+                <img src="img/radar.jpeg" alt="">
+                <h3>Release Radar</h3>
+              </div>
+              <div class="song-item">
+                <img src="img/mixdaily.jpeg" alt="">
+                <h3>Daily Mix 1</h3>
+              </div>
+            </div>
+            <div class="title-song">
+              <h2>Artisti più popolari</h2>
+              <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+            </div>
+            <div class="fl song ">
+              <div class="song-item border">
+                <img src="img/youg.jpeg" alt="">
+                <h3>Lana del Ray</h3>
+              </div>
+              <div class="song-item border">
+                <img src="img/einaudi.jpeg" alt="">
+                <h3>Ludovico Einaudi</h3>
+              </div>
+            </div>
+          </div>
         </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <footer>
+        <div class="foot-start">
+          <div class="track-foot">
+            <img  src="img/sinister.jpeg" alt="">
+          </div>
+          <div class="logo-song"><h3>Sinister</h3>Brano Nome</div>
+            <div class="logo-font">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-folder-o" aria-hidden="true"></i>
+          </div>
 
+        </div>
+        <div class="player">
+            <div class="play-bar">
+              <ul>
+                <li><i class="fa fa-random"></i></li>
+                <li><i class="fa fa-step-backward" aria-hidden="true"></i></li>
+                <li class="big"><i class="fa fa-play-circle-o" aria-hidden="true"></i></li>
+                <li><i class="fa fa-step-forward" aria-hidden="true"></i></li>
+                <li><i class="fa fa-repeat" aria-hidden="true"></i></li>
+              </ul>
+            </div>
+            <div class="player-flexbox">
+              <div class="number">
+                0:25
+              </div>
+            <div class="player-control-time">
+              <div class="time-line perc-20">
+                <div class="point"></div>
+              </div>
+            </div>
+            <div class="number">
+              4:35
+            </div>
+          </div>
+        </div>
+        <div class="foot-end">
+          <i class="fa fa-list" aria-hidden="true"></i>
+          <i class="fa fa-television" aria-hidden="true"></i>
+          <i class="fa fa-volume-up" aria-hidden="true"></i>
+          <div class="volume-control">
+            <div class="player-control-time">
+              <div class="time-line-volume perc-40">
+                <div class="point"></div>
+              </div>
+            </div>
+            </div>
+          </div>
       </footer>
-    </main>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </main>
   </body>
 </html>
